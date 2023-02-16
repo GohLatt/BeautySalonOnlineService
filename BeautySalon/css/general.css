@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+/* General compoment */
+/************************************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+.grid--2--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--col {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.8rem;
+}
+.grid--6--col {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+.grid--3--col--sm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+/************************************/
+/* Heaing */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.1;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+.sub-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1d4ed8;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+/************************************/
+
+/* button and link */
+/************************************/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2.4rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn--fill {
+  background-color: #1d4ed8;
+  color: #fff;
+}
+.btn--fill:hover,
+.btn--fill:active {
+  background-color: #1338a0;
+}
+.btn--outline {
+  background-color: #fff;
+  color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #e7eefd;
+  box-shadow: inset 0px 0px 0px 3px #fff;
+}
+.btn--margin--right {
+  margin-right: 1.2rem;
+}
+.margin--top {
+  margin-top: 4.8rem;
+}
+.btn-b {
+  outline: none;
+  border: none;
+  background-color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+.btn-book {
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+
+  border-radius: 5px;
+}
+.btn-book:hover {
+  background-color: #1338a0;
+}
+.btn-booking {
+  width: 50%;
+  border-radius: 11px;
+  padding: 1.2rem 1.6rem;
+  grid-column: 1/3;
+  font-size: 1.8rem;
+  justify-self: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #1d4ed8;
+  border-bottom: 1px solid #1d4ed8;
+  padding-bottom: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/************************************/
+/* stepicon and step text */
+.step-icon {
+  font-size: 3rem;
+  color: #1338a0;
+  padding: 1.6rem;
+  background-color: #c8deff;
+  border-radius: 50%;
+}
+.step-text {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+/************************************/
+/*text center */
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: #dedede;
+}
+/************************************/
